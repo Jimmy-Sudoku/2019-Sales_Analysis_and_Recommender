@@ -16,7 +16,7 @@ I am curious about how sales works, what does people usually buys and how does i
 
 ## Introduction
 
-The dataset is taken from @Knightbearr,a kaggle user, who provided me with these datasets. There are a total of 12 datasets where it is separated by month. Before analyisng, microsoft excel is used to perform ETL (Extract Transform Load), data cleaning and combining the datset into 1 and then after python is used to do EDA and recommender system. [Recommender system is built to improve sales via upselling and cross-selling and increase of conversion rate by up to 45%](https://blog.saleslayer.com/recommendation-systems-ecommerce#collab).
+The dataset is taken from @Knightbearr,a kaggle user, who provided me with these datasets. There are a total of 12 datasets where it is separated by month. Before analyisng, microsoft excel is used to perform ETL (Extract Transform Load), data cleaning and combining the datset into 1 and then after python is used to do EDA and recommender system. Recommender system is built to improve sales via upselling and cross-selling and increase of conversion rate by up to 45%<a href="https://blog.saleslayer.com/recommendation-systems-ecommerce#collab" target="_blank"><sup>2</sup></a> .
 
 There are also a few task to finding and the below are the tasks:
 - How much was earned that Year?
@@ -39,24 +39,22 @@ There are also a few task to finding and the below are the tasks:
 
 ## Data Cleaning & EDA
 
-Dataset is downloaded from kaggle, excel is used to to ETL(Extract Transform Load) , data cleaning and combined into 1 csv file for analysis. As I am using the free version of Big Query, there is a limit to much I can use SQL for cleaning, data wrangling analysis and visualisation. Therefore, I used both Excel's power query & power pivot and tableau for additional cleaning, data wrangling analysis and visualisation.
+Dataset is downloaded from kaggle, excel's PowerQuery is used to for ETL(Extract Transform Load), data cleaning and combined into 1 csv file for analysis. Python is used for EDA (Exploratory Data Analysis), data mining and saving different csv files to built a dashboard using Tableau. 
 
 
 ## Data Dictionary
 
 |Feature|Type|Dataset|Description|
 |---|---|---|---|
-|**country_name**|object|Big Query|Country of the dataset.| 
-|**region_name**|object|Big Query|Region in Canada.| 
-|**refresh_date**|int64|Big Query|The date of when the data is refreshed. Meaning it is where the new set of terms, country, region and combination of scores are added.| 
-|**week**|int64|Big Query|The first day of the week. It is used as a time series for the analysis.| 
-|**rank**|int64|Big Query|The rank of the top 25 terms for the current dataset, which is based on the refresh date.| 
-|**percent_gain**|int64|Big Query|Percentage gain (rate) at which term rose compared to previous date period.| 
-|**term**|object|Big Query|The human readable identifier for a term, i.e. 'Acme Inc'.| 
-|**score**|int64|Big Query|Presents the maximum search interest of the term for the time and location selected. The index of the value 100 will imply that in the specified time range, a specific term was trending mostly where the peek is, i.e. where the score was highest.| 
-|**category**|object|Excel|Category of the term.| 
-|**latitude**|int64|Excel|The latitude of the region.|
-|**longitude**|int64|Excel|The longitude of the region.|
+|**Order ID**|int64|Kaggle|An Order ID is the number system that Amazon uses exclusively to keep track of orders. Each order receives its own Order ID that will not be duplicated. This number can be useful to the seller when attempting to find out certain details about an order such as shipment date or status.| 
+|**Product**|object|Kaggle|The product that have been sold.| 
+|**Price Each**|float64|Kaggle|The product that have been sold.| 
+|**Quantity Ordered**|int64|Kaggle|Ordered Quantity is the total item quantity ordered in the initial order (without any changes).| 
+|**Price Each**|float64|Kaggle|The price of each products.| 
+|**Order Date**|datetime64[ns]|Kaggle|This is the date the customer is requesting the order be shipped.|
+|**Purchase Address**|object|Kaggle|The purchase order is prepared by the buyer, often through a purchasing department. The purchase order, or PO, usually includes a PO number, which is useful in matching shipments with purchases; a shipping date; billing address; shipping address; and the request items, quantities and price.| 
+|**Sales**|float64|Kaggle|Sales made from the product. It is derived from Price Each x Quantity Ordered| 
+|**City**|object|Kaggle|City where the buyer stays. It is derived from Purchase Address.| 
 
 
 ## Dashboard
@@ -68,10 +66,10 @@ Check out the <a href="https://public.tableau.com/app/profile/jimmy5898/viz/2019
 
 The limitation for the project are the following :
 1. time constraint to complete the project,
-2. the limitations of Apriori Algorithm which is it is performance inefficient<a href="https://en.wikipedia.org/wiki/Apriori_algorithm" target="_blank"><sup>2</sup></a>. 
+2. the limitations of Apriori Algorithm which is it is performance inefficient<a href="https://en.wikipedia.org/wiki/Apriori_algorithm" target="_blank"><sup>3</sup></a>. 
 3. More revelent datas for analysis. For example, datas for multiple years, education and income of the customers, and other factors that may affect the buying decisions of the customers.
 
-For further studies, it is possible to explore other algorithm such as max miner<a href="https://www2.cs.sfu.ca/CourseCentral/741/jpei/readings/baya98.pdf" target="_blank"><sup>3</sup></a> or fast miner<a href="https://www.researchgate.net/publication/253105580_Efficiently_mining_maximal_frequent_patterns_fast-miner" target="_blank"><sup>4</sup></a> or FP-growth<a href="https://towardsdatascience.com/fp-growth-frequent-pattern-generation-in-data-mining-with-python-implementation-244e561ab1c3to" target="_blank"><sup>5</sup></a> or FP-max<a href="https://rasbt.github.io/mlxtend/user_guide/frequent_patterns/fpmax/" target="_blank"><sup>6</sup></a> solve the performance inefficiency, getting more data to visualise the trends.
+For further studies, it is possible to explore other algorithm such as max miner<a href="https://www2.cs.sfu.ca/CourseCentral/741/jpei/readings/baya98.pdf" target="_blank"><sup>4</sup></a> or fast miner<a href="https://www.researchgate.net/publication/253105580_Efficiently_mining_maximal_frequent_patterns_fast-miner" target="_blank"><sup>5</sup></a> or FP-growth<a href="https://towardsdatascience.com/fp-growth-frequent-pattern-generation-in-data-mining-with-python-implementation-244e561ab1c3to" target="_blank"><sup>6</sup></a> or FP-max<a href="https://rasbt.github.io/mlxtend/user_guide/frequent_patterns/fpmax/" target="_blank"><sup>7</sup></a> solve the performance inefficiency, getting more data to visualise the trends.
 
 
 ## Conclusion
