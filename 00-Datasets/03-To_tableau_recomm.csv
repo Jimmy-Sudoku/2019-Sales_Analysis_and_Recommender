@@ -1,0 +1,12 @@
+,Customer brought items,Customer also brought,probability
+255,usb-c charging cable,google phone,0.0055883770725199825
+263,lightning charging cable,iphone,0.00566124457697611
+259,wired headphones,google phone,0.0023653912984989292
+272,wired headphones,iphone,0.002589599004517785
+186,apple airpods headphones,iphone,0.0020851316659753595
+187,iphone,apple airpods headphones,0.0020851316659753595
+262,iphone,lightning charging cable,0.00566124457697611
+273,iphone,wired headphones,0.002589599004517785
+254,google phone,usb-c charging cable,0.0055883770725199825
+258,google phone,wired headphones,0.0023653912984989292
+312,vareebadd phone,usb-c charging cable,0.002062710895373474
