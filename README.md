@@ -1,7 +1,7 @@
 # 2019 Product Sales Analysis and Recommender
 
 
-# Special Mention
+## Special Mention
 
 I would like to thank the following people/software platoform/websites:
 - Kaggle for providing the places for like-minded people to gather and kaggle user @Knightbearr for providing the datasets<a href="https://www.kaggle.com/datasets/knightbearr/sales-product-data/" target="_blank"><sup>1</sup></a> for free for community to use
@@ -9,12 +9,12 @@ I would like to thank the following people/software platoform/websites:
 - youtuber @datatutorials1 for the inspiration of tableau ideas
 - Tableau for allowing community to publish their findings for free
 
-# Motivation
+## Motivation
 
 I am curious about how sales works, what does people usually buys and how does it recommend customer items to buy. Which is why I decided do this project to get some insights.
 
 
-# Introduction
+## Introduction
 
 The dataset is taken from @Knightbearr,a kaggle user, who provided me with these datasets. There are a total of 12 datasets where it is separated by month. Before analyisng, microsoft excel is used to perform ETL (Extract Transform Load), data cleaning and combining the datset into 1 and then after python is used to do EDA and recommender system. [Recommender system is built to improve sales via upselling and cross-selling and increase of conversion rate by up to 45%](https://blog.saleslayer.com/recommendation-systems-ecommerce#collab).
 
@@ -30,19 +30,19 @@ There are also a few task to finding and the below are the tasks:
 - How much probability for next people will ordered Google Phone?
 - How much probability other peoples will ordered Wired Headphones?
 
-# Problem Statement
+## Problem Statement
 
 - To answer the tasks above
 - Find insights about the customer behaviour
 - Build a recommender system to generate more sales by cross-selling and up-selling
 
 
-# Data Cleaning & EDA
+## Data Cleaning & EDA
 
 Dataset is downloaded from kaggle, excel is used to to ETL(Extract Transform Load) , data cleaning and combined into 1 csv file for analysis. As I am using the free version of Big Query, there is a limit to much I can use SQL for cleaning, data wrangling analysis and visualisation. Therefore, I used both Excel's power query & power pivot and tableau for additional cleaning, data wrangling analysis and visualisation.
 
 
-# Data Dictionary
+## Data Dictionary
 
 |Feature|Type|Dataset|Description|
 |---|---|---|---|
@@ -59,12 +59,12 @@ Dataset is downloaded from kaggle, excel is used to to ETL(Extract Transform Loa
 |**longitude**|int64|Excel|The longitude of the region.|
 
 
-# Dashboard
+## Dashboard
 
 Check out the <a href="https://public.tableau.com/app/profile/jimmy5898/viz/2019SalesRecommenderDashboard/Dashboard">dashboard</a> that was done using Tableau!
 
 
-# Limitation and Further Studies
+## Limitation and Further Studies
 
 The limitation for the project are the following :
 1. time constraint to complete the project,
@@ -74,7 +74,7 @@ The limitation for the project are the following :
 For further studies, it is possible to explore other algorithm such as max miner<a href="https://www2.cs.sfu.ca/CourseCentral/741/jpei/readings/baya98.pdf" target="_blank"><sup>3</sup></a> or fast miner<a href="https://www.researchgate.net/publication/253105580_Efficiently_mining_maximal_frequent_patterns_fast-miner" target="_blank"><sup>4</sup></a> or FP-growth<a href="https://towardsdatascience.com/fp-growth-frequent-pattern-generation-in-data-mining-with-python-implementation-244e561ab1c3to" target="_blank"><sup>5</sup></a> or FP-max<a href="https://rasbt.github.io/mlxtend/user_guide/frequent_patterns/fpmax/" target="_blank"><sup>6</sup></a> solve the performance inefficiency, getting more data to visualise the trends.
 
 
-# Conclusion
+## Conclusion
 
 The key takeaways for this project :
 1. Sales
