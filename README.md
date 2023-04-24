@@ -16,7 +16,11 @@ I am curious about how sales works, what does people usually buys and how does i
 
 ## Introduction
 
-The dataset is taken from @Knightbearr,a kaggle user, who provided me with these datasets. There are a total of 12 datasets where it is separated by month. Before analyisng, microsoft excel is used to perform ETL (Extract Transform Load), data cleaning and combining the datset into 1 and then after python is used to do EDA and recommender system. Recommender system is built to improve sales via upselling and cross-selling and increase of conversion rate by up to 45%<a href="https://blog.saleslayer.com/recommendation-systems-ecommerce#collab" target="_blank"><sup>2</sup></a> .
+The dataset is taken from @Knightbearr,a kaggle user, who provided me with these datasets. There are a total of 12 datasets where it is separated by month. Before analyising, Microsoft Excel is used to perform ETL (Extract Transform Load), data cleaning and combining the datset into one and then after python is used to do EDA and recommender system. Recommender system is built to improve sales via upselling and cross-selling and increase of conversion rate by up to 45%<a href="https://blog.saleslayer.com/recommendation-systems-ecommerce#collab" target="_blank"><sup>2</sup></a>.
+
+Based on my own research, the recommender system used for this project will be Apriori algorithm, an unsupervised machine learning method<a href="https://www.kdnuggets.com/2015/05/top-10-data-mining-algorithms-explained.html/2" target="_blank"><sup>3</sup></a> . Apriori is also an data mining technique that is used mainly to identify items that occur together.
+
+
 
 There are also a few task to finding and the below are the tasks:
 - How much was earned that Year?
@@ -66,10 +70,10 @@ Check out the <a href="https://public.tableau.com/app/profile/jimmy5898/viz/2019
 
 The limitation for the project are the following :
 1. time constraint to complete the project,
-2. the limitations of Apriori Algorithm which is it is performance inefficient<a href="https://en.wikipedia.org/wiki/Apriori_algorithm" target="_blank"><sup>3</sup></a>. 
+2. the limitations of Apriori Algorithm which is it is performance inefficient<a href="https://en.wikipedia.org/wiki/Apriori_algorithm" target="_blank"><sup>4</sup></a>. 
 3. More revelent datas for analysis. For example, datas for multiple years, education and income of the customers, and other factors that may affect the buying decisions of the customers.
 
-For further studies, it is possible to explore other algorithm such as max miner<a href="https://www2.cs.sfu.ca/CourseCentral/741/jpei/readings/baya98.pdf" target="_blank"><sup>4</sup></a> or fast miner<a href="https://www.researchgate.net/publication/253105580_Efficiently_mining_maximal_frequent_patterns_fast-miner" target="_blank"><sup>5</sup></a> or FP-growth<a href="https://towardsdatascience.com/fp-growth-frequent-pattern-generation-in-data-mining-with-python-implementation-244e561ab1c3to" target="_blank"><sup>6</sup></a> or FP-max<a href="https://rasbt.github.io/mlxtend/user_guide/frequent_patterns/fpmax/" target="_blank"><sup>7</sup></a> solve the performance inefficiency, getting more data to visualise the trends.
+For further studies, it is possible to explore other algorithm such as max miner<a href="https://www2.cs.sfu.ca/CourseCentral/741/jpei/readings/baya98.pdf" target="_blank"><sup>5</sup></a> or fast miner<a href="https://www.researchgate.net/publication/253105580_Efficiently_mining_maximal_frequent_patterns_fast-miner" target="_blank"><sup>6</sup></a> or FP-growth<a href="https://towardsdatascience.com/fp-growth-frequent-pattern-generation-in-data-mining-with-python-implementation-244e561ab1c3to" target="_blank"><sup>7</sup></a> or FP-max<a href="https://rasbt.github.io/mlxtend/user_guide/frequent_patterns/fpmax/" target="_blank"><sup>8</sup></a> solve the performance inefficiency, getting more data to visualise the trends.
 
 
 ## Conclusion
