@@ -39,7 +39,7 @@ There are also a few task to finding and the below are the tasks:
 
 ## Data Cleaning & EDA
 
-Dataset is downloaded from kaggle, excel's PowerQuery is used to for ETL(Extract Transform Load), data cleaning and combined into 1 csv file for analysis. Python is used for EDA (Exploratory Data Analysis), data mining and saving different csv files to built a dashboard using Tableau. 
+Dataset is downloaded from kaggle, Microsoft Excel's PowerQuery is used to for ETL(Extract Transform Load), data cleaning and combining multiple csv files into 1 csv file for analysis. Python is used for EDA (Exploratory Data Analysis), data mining and saving different csv files to built a dashboard using Tableau. 
 
 
 ## Data Dictionary
