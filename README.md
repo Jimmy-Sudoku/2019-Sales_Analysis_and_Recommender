@@ -1,7 +1,7 @@
 # 2019 Product Sales Analysis and Recommender
 
 
-## Special Mention
+## Special Mentions
 
 I would like to thank the following people/software platform/websites:
 - Kaggle for providing the places for like-minded people to gather and kaggle user @Knightbearr for providing the datasets<a href="https://www.kaggle.com/datasets/knightbearr/sales-product-data/" target="_blank"><sup>1</sup></a> for free for community to use
